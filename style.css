@@ -1,0 +1,174 @@
+/* Color variables */
+:root {
+    --white-color: #fff;
+    --bg-color: #fff;
+    --gray-color: #ccc;
+  }
+
+  header{
+    background-color: #B4FC02;
+  }
+  nav{
+    background: #B4FC02;
+  }
+  
+  /* Changing background color */
+  body {
+    background: var(--bg-color) !important;
+  }
+  
+  /* Changing link color */
+  .nav-item .nav-link {
+    color: var(--white-color);
+  }
+  
+  /* Hero section background image */
+  .hero {
+    height: 100vh;
+    background-image: url("imagens/brotos-verdes-em-solo-escuro-contra-um-fundo-desfocado-simbolizando-o-conceito-de-crescimento-e-potencial_90220-1462.avif");
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #skills i {
+    height: 100px;
+    width: 100px;
+  }
+  
+  #portfolio img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  #about .img,
+  #about img,
+  .hire-text h2 {
+    position: relative;
+  }
+  
+  /* Timeline background line */
+  #about .img::before {
+    content: "";
+    left: 50%;
+    width: 4px;
+    position: absolute;
+    height: calc(100% + 140px);
+    background: var(--gray-color);
+  }
+  
+  #about img,
+  #about .hire-text h2 {
+    width: 140px;
+  }
+  
+  #about .hire-text h2 {
+    height: 140px;
+  }
+  
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #cv img {
+    width: 230px;
+  }
+  
+  /* Contact section background image */
+  #contact {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("imagens/07.png");
+  }
+  
+  @media screen and (max-width: 990px) {
+    #skills .card {
+      width: calc(100% / 2 - 10px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 668px) {
+    #skills .card,
+    #portfolio .card-wrapper {
+      width: 100% !important;
+    }
+   #about .hire-text h2 {
+     height: 70px;
+     width: 70px;
+   }
+  }
+
+
+  ::-webkit-scrollbar {
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #B4FC02;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B4FC02;
+  }
+  .container2 {
+    display: flex;
+    gap: 12px;
+    max-width: 400px;
+    width: 100%;
+    background: #B4FC02;
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  .container2 .card2 {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  .card2 .image2 {
+    height: 150px;
+    width: 150px;
+    padding: 4px;
+    background: #B4FC02;
+    border-radius: 50%;
+  }
+  .image2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  .card2 h2 {
+    margin-top: 25px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .card2 p {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+  }
